@@ -1,0 +1,28 @@
+[
+  {
+    "item_id": "B001",
+    "title": "Python Programming",
+    "author": "John Doe",
+    "is_available": true,
+    "type": "Book",
+    "publisher": "Tech Press",
+    "pages": 320
+  },
+  {
+    "item_id": "M001",
+    "title": "Science Monthly",
+    "author": "Various",
+    "is_available": true,
+    "type": "Magazine",
+    "issue": 45,
+    "month": "June"
+  },
+  {
+    "item_id": "D001",
+    "title": "Inception",
+    "author": "Christopher Nolan",
+    "is_available": true,
+    "type": "DVD",
+    "duration": 148
+  }
+]
