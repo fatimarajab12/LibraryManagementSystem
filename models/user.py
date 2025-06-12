@@ -2,7 +2,7 @@ class User:
     def __init__(self, user_id, name):
         self.user_id = user_id
         self.name = name
-        self.borrowed_items = []  # قائمة العناصر اللي استعارها
+        self.borrowed_items = [] 
 
     def borrow_item(self, item):
         if item.is_available:
@@ -32,13 +32,13 @@ class User:
         return {
             "user_id": self.user_id,
             "name": self.name,
-            "borrowed_items": [item.item_id for item in self.borrowed_items]  # نفس المفتاح المستخدم في JSON
+            "borrowed_items": [item.item_id for item in self.borrowed_items]  
         }
 
     @classmethod
     def from_dict(cls, data, all_items):
         user = cls(data["user_id"], data["name"])
-        borrowed_ids = data.get("borrowed_items", [])  # نفس المفتاح هنا
+        borrowed_ids = data.get("borrowed_items", [])  
         for item_id in borrowed_ids:
             item = next((i for i in all_items if i.item_id == item_id), None)
             if item:
